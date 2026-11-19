@@ -532,9 +532,9 @@ footer .wrap { padding-top: 22px; padding-bottom: 22px; display: flex; justify-c
 <script>
   // Add your details here. Leave a value empty ("") to hide that button.
   const CONTACT = {
-    whatsapp: "94761605523" or "97430365523",   // international format, digits only, e.g. "94771234567"
+    whatsapp: ["94761605523", "97430365523"],   // international format, digits only, e.g. "94771234567"
     email: "irshfoumie@icloud.com"       // e.g. "hello@yourdomain.com"
-  };
+  };   
   (function () {
     const list = document.getElementById("contact-list");
     const add = (label, value, href) => {
@@ -546,8 +546,9 @@ footer .wrap { padding-top: 22px; padding-bottom: 22px; display: flex; justify-c
       list.insertBefore(a, list.firstChild);
     };
     if (CONTACT.email) add("Email", CONTACT.email, "mailto:" + CONTACT.email);
-    if (CONTACT.whatsapp) add("WhatsApp", "+" + CONTACT.whatsapp, "https://wa.me/" + CONTACT.whatsapp);
-
+    //if (CONTACT.whatsapp) add("WhatsApp", "+" + CONTACT.whatsapp, "https://wa.me/" + CONTACT.whatsapp);
+    [].concat(CONTACT.whatsapp).filter(Boolean).reverse().forEach(n => add("WhatsApp", "+" + n, "https://wa.me/" + n));
+     
     // Currency switch: USD by default, LKR for visitors whose device is set to Sri Lanka time.
     const buttons = document.querySelectorAll(".cur button");
     const setCur = (cur) => {
