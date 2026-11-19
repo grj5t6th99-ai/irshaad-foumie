@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Irshaad Foumie | Business Software &amp; Web Development</title>
+<link rel="canonical" href="https://dev.viibe.store/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%238A1538'/%3E%3Ctext x='16' y='21.5' font-family='Arial,sans-serif' font-weight='800' font-size='14' fill='white' text-anchor='middle'%3EIF%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Irshaad Foumie">
+<meta property="og:url" content="https://dev.viibe.store/">
+<meta property="og:title" content="Business software &amp; websites that run your operations">
+<meta property="og:description" content="16 live demos: CRM, ERP, accounting, POS, clinic, salon, car showroom and more. Arabic &amp; English. Middle East, Sri Lanka &amp; worldwide.">
+<meta property="og:image" content="https://dev.viibe.store/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Irshaad Foumie: business software and websites, 16 live demos">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Business software &amp; websites that run your operations">
+<meta name="twitter:description" content="16 live demos. Arabic &amp; English. Middle East, Sri Lanka &amp; worldwide.">
+<meta name="twitter:image" content="https://dev.viibe.store/og-image.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Irshaad Foumie | Business Software & Web Development","url":"https://dev.viibe.store/","image":"https://dev.viibe.store/og-image.png","description":"Business software and websites for the Middle East, Sri Lanka and worldwide. 16 live demos: CRM, ERP, accounting, POS, clinic, salon and more. Arabic and English. PMP-certified.","founder":{"@type":"Person","name":"Mohammed Irshaad Foumie","sameAs":["https://www.linkedin.com/in/irshaad-foumie-981bab10a"]},"email":"irshfoumie@icloud.com","telephone":["+97430365523","+94761605523"],"areaServed":["Qatar","United Arab Emirates","Saudi Arabia","Sri Lanka","Worldwide"],"knowsLanguage":["en","ar"]}
+</script>
+<meta name="description" content="Business software and websites for the Middle East, Sri Lanka and worldwide. 16 live demos: CRM, ERP, accounting, POS, clinic, salon and more. Arabic and English. PMP-certified.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: an operator's index. The hero pairs a wide, engineered headline with a live "systems index"
+   console; everything below reads like a well-kept ledger: ruled rows, mono figures, one maroon accent. */
+:root {
+  --paper: #F3F4F6;
+  --panel: #FFFFFF;
+  --ink: #15161A;
+  --muted: #5B5E66;
+  --line: #D8DADF;
+  --accent: #8A1538;
+  --accent-soft: #F5E6EA;
+  --on-accent: #FFFFFF;
+  --live: #1E7A4C;
+  --live-soft: #E3F2EA;
+  --build: #8A5A00;
+  --build-soft: #FBF0D9;
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", Roboto, Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --font-ar: "IBM Plex Sans Arabic", "Geeza Pro", Tahoma, sans-serif;
+  --radius: 6px;
+  --wrap: 1160px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #111214; --panel: #191A1E; --ink: #ECEDEF; --muted: #9C9FA7; --line: #2B2D33;
+    --accent: #D9587A; --accent-soft: #3A1B25; --on-accent: #15161A;
+    --live: #4CC38A; --live-soft: #15301F; --build: #E2B04F; --build-soft: #33280F;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #111214; --panel: #191A1E; --ink: #ECEDEF; --muted: #9C9FA7; --line: #2B2D33;
+  --accent: #D9587A; --accent-soft: #3A1B25; --on-accent: #15161A;
+  --live: #4CC38A; --live-soft: #15301F; --build: #E2B04F; --build-soft: #33280F;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: var(--font-body); font-size: 17px; line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; }
+h2 { font-size: clamp(30px, 4vw, 44px); font-variation-settings: "wdth" 112; font-weight: 750; letter-spacing: -0.01em; line-height: 1.08; }
+h3 { font-size: 21px; font-variation-settings: "wdth" 100; font-weight: 700; line-height: 1.25; }
+p { margin: 0; }
+.mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.eyebrow { font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.lede { color: var(--muted); max-width: 62ch; font-size: 18px; }
+
+/* Nav */
+.nav { border-bottom: 1px solid var(--line); background: var(--paper); position: sticky; top: 0; z-index: 10; }
+.nav .wrap { display: flex; align-items: center; gap: 24px; height: 64px; }
+.mark { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 600; }
+.mark span.box { width: 30px; height: 30px; background: var(--accent); color: var(--on-accent); display: grid; place-items: center; font-family: var(--font-display); font-variation-settings: "wdth" 125; font-weight: 800; font-size: 13px; border-radius: 4px; }
+.nav ul { display: flex; gap: 22px; list-style: none; margin: 0 0 0 auto; padding: 0; font-size: 15px; }
+.nav ul a { text-decoration: none; color: var(--muted); }
+.nav ul a:hover { color: var(--ink); }
+@media (max-width: 760px) { .nav ul { display: none; } .nav .btn { margin-left: auto; } }
+
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: var(--radius); font-weight: 600; font-size: 15px; text-decoration: none; border: 1px solid transparent; cursor: pointer; transition: transform .15s ease, background .15s ease; }
+.btn-primary { background: var(--accent); color: var(--on-accent); }
+.btn-primary:hover { transform: translateY(-1px); }
+.btn-ghost { border-color: var(--line); background: var(--panel); color: var(--ink); }
+.btn-ghost:hover { border-color: var(--ink); }
+
+/* Hero */
+.hero { padding: clamp(48px, 7vw, 88px) 0 56px; }
+.hero .wrap { display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(32px, 5vw, 64px); align-items: start; }
+@media (max-width: 960px) { .hero .wrap { grid-template-columns: 1fr; } }
+.hero h1 { font-size: clamp(40px, 6.2vw, 76px); font-variation-settings: "wdth" 125; font-weight: 800; line-height: 0.98; letter-spacing: -0.02em; margin: 18px 0 14px; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.ar { font-family: var(--font-ar); direction: rtl; font-size: 20px; color: var(--muted); margin-bottom: 22px; }
+.hero .lede { margin-bottom: 28px; }
+.ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+
+/* Systems index console */
+.console { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; box-shadow: 0 1px 0 var(--line), 0 18px 40px -24px rgba(20,20,30,.35); }
+.console-head { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; border-bottom: 1px solid var(--line); font-family: var(--font-mono); font-size: 12.5px; color: var(--muted); }
+.dots { display: flex; gap: 6px; } .dots i { width: 9px; height: 9px; border-radius: 50%; background: var(--line); display: block; }
+.console ol { list-style: none; margin: 0; padding: 0; }
+.console li a { display: grid; grid-template-columns: 30px 1fr auto; gap: 12px; align-items: center; padding: 12px 16px; border-bottom: 1px solid var(--line); text-decoration: none; transition: background .15s ease; }
+.console li:last-child a { border-bottom: 0; }
+.console li a:hover { background: var(--accent-soft); }
+.console .n { font-family: var(--font-mono); font-size: 12.5px; color: var(--muted); }
+.console .t { font-weight: 600; font-size: 15.5px; line-height: 1.3; }
+.console .t small { display: block; font-weight: 400; color: var(--muted); font-size: 13.5px; }
+.pill { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: .04em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; white-space: nowrap; }
+.pill.prod { background: var(--accent-soft); color: var(--accent); }
+.pill.live { background: var(--live-soft); color: var(--live); }
+.pill.build { background: var(--build-soft); color: var(--build); }
+.pill::before { content: "● "; }
+
+/* Proof strip */
+.proof { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--panel); }
+.proof .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
+.proof div.cell { padding: 22px 0; border-left: 1px solid var(--line); padding-left: 20px; }
+.proof div.cell:first-child { border-left: 0; padding-left: 0; }
+.proof b { display: block; font-family: var(--font-display); font-variation-settings: "wdth" 125; font-weight: 800; font-size: 30px; line-height: 1.1; }
+.proof span { color: var(--muted); font-size: 14.5px; }
+@media (max-width: 760px) { .proof .wrap { grid-template-columns: 1fr 1fr; } .proof div.cell:nth-child(3) { border-left: 0; padding-left: 0; } .proof div.cell:nth-child(n+3) { border-top: 1px solid var(--line); } }
+
+section.block { padding: clamp(64px, 8vw, 104px) 0; }
+.sec-head { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 48px; align-items: end; margin-bottom: 40px; }
+.sec-head .eyebrow { grid-column: 1 / -1; }
+@media (max-width: 860px) { .sec-head { grid-template-columns: 1fr; } }
+
+/* Work */
+.work { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+@media (max-width: 860px) { .work { grid-template-columns: 1fr; } }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 26px; display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 84px; }
+.card.feature { grid-column: 1 / -1; border-color: var(--accent); }
+.card-top { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+.card .sector { font-family: var(--font-mono); font-size: 12.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.card p { color: var(--muted); }
+.card ul.feat { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; font-size: 15.5px; }
+.card ul.feat li { padding-left: 18px; position: relative; }
+.card ul.feat li::before { content: ""; position: absolute; left: 0; top: .7em; width: 8px; height: 1.5px; background: var(--accent); }
+.card .foot { margin-top: auto; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; padding-top: 14px; border-top: 1px dashed var(--line); }
+.stack { font-family: var(--font-mono); font-size: 12.5px; color: var(--muted); }
+.demo { font-weight: 600; font-size: 15px; color: var(--accent); text-decoration: none; }
+.demo:hover { text-decoration: underline; }
+.feature .cols { display: grid; grid-template-columns: 1.1fr 1fr; gap: 28px; }
+@media (max-width: 760px) { .feature .cols { grid-template-columns: 1fr; } }
+
+.pipeline { margin-top: 20px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 22px 26px; }
+.pipeline h3 { font-size: 17px; margin-bottom: 12px; }
+.pipeline .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.chip { border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font-size: 14.5px; }
+
+/* Packages */
+.packages { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--panel); }
+@media (max-width: 960px) { .packages { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 620px) { .packages { grid-template-columns: 1fr; } }
+.pkg { padding: 28px 26px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 12px; }
+.pkg.hl { background: var(--accent-soft); }
+.pkg .tag { font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); }
+.price { font-family: var(--font-display); font-variation-settings: "wdth" 115; font-weight: 800; font-size: 32px; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.price small { font-family: var(--font-body); font-weight: 400; font-size: 14px; color: var(--muted); display: block; margin-top: 4px; }
+.pkg ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: 15.5px; display: grid; gap: 4px; }
+.pkg .time { margin-top: auto; font-family: var(--font-mono); font-size: 13px; color: var(--ink); padding-top: 10px; border-top: 1px dashed var(--line); }
+.terms { margin-top: 18px; color: var(--muted); font-size: 15px; }
+
+/* Process */
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; counter-reset: s; }
+@media (max-width: 860px) { .steps { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .steps { grid-template-columns: 1fr; } }
+.step { padding: 24px 24px 24px 0; border-top: 2px solid var(--ink); display: grid; gap: 8px; align-content: start; }
+.step + .step { padding-left: 0; }
+.step .k { font-family: var(--font-mono); font-size: 13px; color: var(--accent); }
+.step p { color: var(--muted); font-size: 15.5px; padding-right: 16px; }
+
+/* Why */
+.why { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+@media (max-width: 860px) { .why { grid-template-columns: 1fr; } }
+.why div { display: grid; gap: 10px; align-content: start; }
+.why p { color: var(--muted); }
+
+/* FAQ */
+.faq { border-top: 1px solid var(--line); }
+.faq details { border-bottom: 1px solid var(--line); padding: 18px 0; }
+.faq summary { cursor: pointer; font-weight: 600; font-size: 17.5px; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font-family: var(--font-mono); color: var(--accent); }
+.faq details[open] summary::after { content: "−"; }
+.faq details p { color: var(--muted); margin-top: 10px; max-width: 70ch; }
+
+/* Contact */
+.contact { background: var(--ink); color: var(--paper); }
+.contact .wrap { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; }
+@media (max-width: 860px) { .contact .wrap { grid-template-columns: 1fr; } }
+.contact h2 { font-variation-settings: "wdth" 125; }
+.contact .lede { color: color-mix(in srgb, var(--paper) 72%, transparent); margin-top: 14px; }
+.contact .ar { color: color-mix(in srgb, var(--paper) 60%, transparent); margin: 14px 0 0; }
+.contact-list { display: grid; gap: 12px; }
+.contact-list a { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 16px 18px; border: 1px solid color-mix(in srgb, var(--paper) 22%, transparent); border-radius: var(--radius); text-decoration: none; transition: background .15s ease; }
+.contact-list a:hover { background: color-mix(in srgb, var(--paper) 8%, transparent); }
+.contact-list .lbl { font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: color-mix(in srgb, var(--paper) 60%, transparent); display: block; }
+.contact-list .val { font-weight: 600; word-break: break-all; }
+.contact-list .go { font-family: var(--font-mono); color: var(--accent); }
+footer { background: var(--ink); color: color-mix(in srgb, var(--paper) 55%, transparent); font-size: 14px; border-top: 1px solid color-mix(in srgb, var(--paper) 14%, transparent); }
+footer .wrap { padding-top: 22px; padding-bottom: 22px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 36px 0 20px; }
+.filters button { font: 500 14.5px var(--font-body); color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 8px 14px; cursor: pointer; }
+.filters button span { font-family: var(--font-mono); font-size: 12px; color: var(--muted); margin-left: 4px; }
+.filters button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.filters button[aria-pressed="true"] span { color: inherit; opacity: .7; }
+.demos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+@media (max-width: 1000px) { .demos { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .demos { grid-template-columns: 1fr; } }
+.demos .card[hidden] { display: none; }
+.card h3 small { display: block; font-family: var(--font-body); font-weight: 500; font-size: 15px; color: var(--muted); margin-top: 4px; }
+.card .foot .stack { flex: 1 1 auto; }
+.demos .card-top { flex-direction: column-reverse; align-items: flex-start; gap: 10px; }
+.demos .card .foot { flex-direction: column; align-items: flex-start; gap: 8px; }
+.go-more { font-family: var(--font-mono); font-size: 12px; color: var(--accent); white-space: nowrap; }
+.cur { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; background: var(--panel); gap: 2px; }
+.cur button { font: 600 14px var(--font-body); border: 0; background: transparent; color: var(--muted); padding: 7px 14px; border-radius: 999px; cursor: pointer; }
+.cur button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.sec-head .cur-wrap { grid-column: 1 / -1; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; color: var(--muted); font-size: 15px; }
+.markets { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+@media (max-width: 960px) { .markets { grid-template-columns: 1fr; } }
+.market { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 26px; display: grid; gap: 12px; align-content: start; }
+.market .flag { font-family: var(--font-mono); font-size: 12.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+.market p { color: var(--muted); }
+.market ul { margin: 0; padding-left: 18px; color: var(--muted); display: grid; gap: 4px; font-size: 15.5px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.cur-select select { font: 600 14px var(--font-mono); color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 8px 30px 8px 14px; cursor: pointer; appearance: none; -webkit-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%), linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position: calc(100% - 16px) 52%, calc(100% - 11px) 52%; background-size: 5px 5px; background-repeat: no-repeat; }
+@media (max-width: 760px) { .cur-select { margin-left: auto; } .nav .btn { margin-left: 0; padding: 9px 12px; } }
+.cprice { font-size: 14.5px; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; }
+.cprice em { display: block; font-style: normal; font-weight: 400; color: var(--muted); }
+@media (max-width: 520px) { .mname { display: none; } }
+.webgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--panel); }
+@media (max-width: 960px) { .webgrid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 620px) { .webgrid { grid-template-columns: 1fr; } }
+.webtile { padding: 26px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 10px; }
+.webtile .tag { font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); }
+.webtile p { color: var(--muted); font-size: 15.5px; }
+.wfoot { margin-top: auto; padding-top: 12px; border-top: 1px dashed var(--line); display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.wprice { font-family: var(--font-display); font-variation-settings: "wdth" 110; font-weight: 800; font-size: 22px; font-variant-numeric: tabular-nums; }
+.webtile .time { font-family: var(--font-mono); font-size: 13px; color: var(--muted); }
+.packages { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 1100px) { .packages { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 620px) { .packages { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="mark" href="#top"><span class="box">IF</span> <span class="mname">Irshaad Foumie</span></a>
+    <ul>
+      <li><a href="#work">Software</a></li>
+      <li><a href="#web">Web design</a></li>
+      <li><a href="#services">Pricing</a></li>
+      <li><a href="#clients">Who I work with</a></li>
+    </ul>
+    <label class="cur-select" for="currency"><span class="sr">Currency</span>
+      <select id="currency">
+        <option value="usd">USD $</option>
+        <option value="qar">QAR</option>
+        <option value="aed">AED</option>
+        <option value="sar">SAR</option>
+        <option value="lkr">LKR</option>
+      </select>
+    </label>
+    <a class="btn btn-primary" href="#contact">Book a free demo</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Software &amp; web development · Middle East · Sri Lanka · Worldwide</p>
+      <h1>I build the software <em>Middle East businesses</em> run on.</h1>
+      <p class="ar" lang="ar">أنظمة أعمال مصممة للشرق الأوسط، بالعربية والإنجليزية</p>
+      <p class="lede">CRM, ERP, accounting, POS and operations systems, plus websites, online stores and web apps, in Arabic and English, for businesses across the Middle East, in Sri Lanka and worldwide. Every project is planned and delivered by a PMP-certified project manager who also writes the code, so you get one person accountable from the first meeting to launch day.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#work">See live demos →</a>
+        <a class="btn btn-ghost" href="#web">Web design services</a>
+      </div>
+    </div>
+
+    <div class="console" aria-label="Systems I have built">
+      <div class="console-head"><span class="dots"><i></i><i></i><i></i></span><span>systems.index · 16 built</span></div>
+      <ol>
+        <li><a href="#sanad"><span class="n">01</span><span class="t">Sanad CRM<small>Insurance brokerage</small></span><span class="pill prod">In use</span></a></li>
+        <li><a href="#mizan"><span class="n">02</span><span class="t">MIZAN<small>Trading &amp; contracting ERP</small></span><span class="pill live">Demo</span></a></li>
+        <li><a href="#daftar"><span class="n">03</span><span class="t">DAFTAR<small>Multi-company accounting</small></span><span class="pill live">Demo</span></a></li>
+        <li><a href="#suq"><span class="n">04</span><span class="t">SUQ<small>Retail &amp; hospitality POS</small></span><span class="pill live">Demo</span></a></li>
+        <li><a href="#ayar"><span class="n">05</span><span class="t">AYAR<small>Gold &amp; jewellery retail</small></span><span class="pill live">Demo</span></a></li>
+        <li><a href="#nabd"><span class="n">06</span><span class="t">NABD<small>Medical centre management</small></span><span class="pill live">Demo</span></a></li>
+        <li><a href="#markaba"><span class="n">07</span><span class="t">MARKABA<small>Car showroom system</small></span><span class="pill live">Demo</span></a></li>
+        <li><a href="#athar"><span class="n">08</span><span class="t">ATHAR<small>Property &amp; real estate</small></span><span class="pill live">Demo</span></a></li>
+        <li><a href="#work"><span class="n">+8</span><span class="t">8 more systems<small>Schools, delivery, salons, restaurants, cafés and more</small></span><span class="go-more">View all →</span></a></li>
+      </ol>
+    </div>
+  </div>
+</header>
+
+<div class="proof">
+  <div class="wrap">
+    <div class="cell"><b>PMP®</b><span>Certified project manager</span></div>
+    <div class="cell"><b class="mono">10+</b><span>Years delivering projects</span></div>
+    <div class="cell"><b class="mono">16</b><span>Business systems built</span></div>
+    <div class="cell"><b>EN · ع</b><span>Arabic right-to-left as standard</span></div>
+  </div>
+</div>
+
+<section class="block" id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">01 · Selected work</p>
+      <h2>16 working systems you can click through today.</h2>
+      <p class="lede">Open a demo, try it with sample data, and picture your own team using it. Each one was designed around how businesses in the Gulf actually operate, in Arabic and English. Prices are for a ready-to-use version with your branding and data; change the currency at the top of the page.</p>
+    </div>
+
+    <article class="card feature" id="sanad">
+      <div class="card-top"><span class="sector">Insurance brokerage · Client project</span><span class="pill prod">In daily use</span></div>
+      <div class="cols">
+        <div>
+          <h3>Sanad CRM for insurance brokers</h3>
+          <p style="margin-top:10px">A complete CRM for a licensed insurance brokerage in the Gulf, used every day to run quotes, policies and renewals. It replaced spreadsheets and email chains with one system the whole team works in.</p>
+        </div>
+        <ul class="feat">
+          <li>Motor and medical RFQs, with duplicate detection and automatic numbering</li>
+          <li>AI reads insurers' PDF quotes and fills in the comparison</li>
+          <li>Automatic renewal reminders logged against each client</li>
+          <li>Excel exports, cloud backups, custom domain</li>
+        </ul>
+      </div>
+      <div class="foot"><span class="stack">Also available as a ready product with full accounting: Meridian CRM &amp; ERP, from <span class="amt" data-usd="USD 4,500" data-qar="QAR 16,500" data-aed="AED 16,500" data-sar="SAR 17,000" data-lkr="LKR 200,000">USD 4,500</span> setup + <span class="amt" data-usd="USD 250" data-qar="QAR 910" data-aed="AED 920" data-sar="SAR 940" data-lkr="LKR 9,500">USD 250</span>/month</span><a class="demo" href="https://meridian-demo-production-c115.up.railway.app">Open Meridian demo →</a></div>
+    </article>
+
+    <div class="filters" role="group" aria-label="Filter demos by industry">
+      <button type="button" id="f-all" data-f="all" aria-pressed="true">All <span>15</span></button>
+      <button type="button" id="f-retail" data-f="retail" aria-pressed="false">Retail &amp; hospitality <span>5</span></button>
+      <button type="button" id="f-finance" data-f="finance" aria-pressed="false">Finance &amp; operations <span>4</span></button>
+      <button type="button" id="f-services" data-f="services" aria-pressed="false">Property, auto &amp; services <span>4</span></button>
+      <button type="button" id="f-care" data-f="care" aria-pressed="false">Health &amp; education <span>2</span></button>
+    </div>
+
+    <div class="demos">
+      <article class="card" id="suq" data-cat="retail">
+        <div class="card-top"><span class="sector">Retail · Hospitality</span><span class="pill live">Live demo</span></div>
+        <h3>SUQ <small>Retail &amp; hospitality POS</small></h3>
+        <p>Point-of-sale and inventory for shops, supermarkets and restaurants, built for the Gulf from the ground up rather than an imported system adapted after the fact.</p>
+        <div class="foot"><span class="cprice">From <span class="amt" data-usd="USD 2,000" data-qar="QAR 7,300" data-aed="AED 7,350" data-sar="SAR 7,500" data-lkr="LKR 90,000">USD 2,000</span> setup <em>+ <span class="amt" data-usd="USD 120" data-qar="QAR 440" data-aed="AED 440" data-sar="SAR 450" data-lkr="LKR 4,500">USD 120</span>/month</em></span><span class="stack">POS · Inventory · Landed cost</span><a class="demo" href="https://grj5t6th99-ai.github.io/suq/">Open demo →</a></div>
+      </article>
+
+      <article class="card" id="mizan" data-cat="finance">
+        <div class="card-top"><span class="sector">Trading · Contracting</span><span class="pill live">Live demo</span></div>
+        <h3>MIZAN <small>Enterprise resource planning</small></h3>
+        <p>Connects projects, purchasing, inventory and finance in one system for trading and contracting companies.</p>
+        <div class="foot"><span class="cprice">From <span class="amt" data-usd="USD 6,000" data-qar="QAR 22,000" data-aed="AED 22,000" data-sar="SAR 22,500" data-lkr="LKR 270,000">USD 6,000</span> setup <em>+ <span class="amt" data-usd="USD 350" data-qar="QAR 1,250" data-aed="AED 1,300" data-sar="SAR 1,300" data-lkr="LKR 13,000">USD 350</span>/month</em></span><span class="stack">Projects · Purchasing · Finance</span><a class="demo" href="https://grj5t6th99-ai.github.io/mizan/">Open demo →</a></div>
+      </article>
+
+      <article class="card" id="daftar" data-cat="finance">
+        <div class="card-top"><span class="sector">Accounting · Any business</span><span class="pill live">Live demo</span></div>
+        <h3>DAFTAR <small>Multi-company accounting</small></h3>
+        <p>Ledgers, invoices, receivables and financial reporting, with inventory, multi-currency, bank reconciliation and 15 reports.</p>
+        <div class="foot"><span class="cprice">From <span class="amt" data-usd="USD 2,500" data-qar="QAR 9,100" data-aed="AED 9,200" data-sar="SAR 9,400" data-lkr="LKR 110,000">USD 2,500</span> setup <em>+ <span class="amt" data-usd="USD 150" data-qar="QAR 550" data-aed="AED 550" data-sar="SAR 560" data-lkr="LKR 5,500">USD 150</span>/month</em></span><span class="stack">GL · AR/AP · Reports</span><a class="demo" href="https://grj5t6th99-ai.github.io/daftar/">Open demo →</a></div>
+      </article>
+
+      <article class="card" id="ayar" data-cat="retail">
+        <div class="card-top"><span class="sector">Gold &amp; jewellery</span><span class="pill live">Live demo</span></div>
+        <h3>AYAR <small>Gold &amp; jewellery retail</small></h3>
+        <p>Built for jewellers: work with weight, purity, making charges and individual stock items, from the counter to the back office.</p>
+        <div class="foot"><span class="cprice">From <span class="amt" data-usd="USD 3,000" data-qar="QAR 11,000" data-aed="AED 11,000" data-sar="SAR 11,000" data-lkr="LKR 135,000">USD 3,000</span> setup <em>+ <span class="amt" data-usd="USD 180" data-qar="QAR 660" data-aed="AED 660" data-sar="SAR 680" data-lkr="LKR 7,000">USD 180</span>/month</em></span><span class="stack">Weight · Purity · Making charges</span><a class="demo" href="https://grj5t6th99-ai.github.io/ayar/">Open demo →</a></div>
+      </article>
+
+      <article class="card" id="school360" data-cat="care">
+        <div class="card-top"><span class="sector">Private schools</span><span class="pill live">Live demo</span></div>
+        <h3>School360 <small>School management</small></h3>
+        <p>Admissions, attendance, fees and parent communication in one app for administration, teachers, parents and facilities staff.</p>
+        <div class="foot"><span class="cprice">From <span class="amt" data-usd="USD 4,000" data-qar="QAR 14,500" data-aed="AED 14,500" data-sar="SAR 15,000" data-lkr="LKR 180,000">USD 4,000</span> setup <em>+ <span class="amt" data-usd="USD 300" data-qar="QAR 1,100" data-aed="AED 1,100" data-sar="SAR 1,100" data-lkr="LKR 11,000">USD 300</span>/month</em></span><span class="stack">Admin · Teacher · Parent</span><a class="demo" href="https://grj5t6th99-ai.github.io/school360/">Open demo →</a></div>
+      </article>
+
+      <article class="card" id="delivery" data-cat="services">
+        <div class="card-top"><span class="sector">Delivery · Marketplace</span><span class="pill live">Live demo</span></div>
+        <h3>Delivery Platform <small>Delivery management</small></h3>
+        <p>Customer ordering, merchant fulfilment, rider dispatch and operations for food, grocery, pharmacy and parcels, with live tracking.</p>
+        <div class="foot"><span class="cprice">From <span class="amt" data-usd="USD 9,000" data-qar="QAR 33,000" data-aed="AED 33,000" data-sar="SAR 34,000" data-lkr="LKR 405,000">USD 9,000</span> setup <em>+ <span class="amt" data-usd="USD 450" data-qar="QAR 1,650" data-aed="AED 1,650" data-sar="SAR 1,700" data-lkr="LKR 17,000">USD 450</span>/month</em></span><span class="stack">Customer · Merchant · Rider · Ops</span><a class="demo" href="https://delivery-comp-production.up.railway.app/">Open demo →</a></div>
+      </article>
+
+      <article class="card" id="nabd" data-cat="care">
+        <div class="card-top"><span class="sector">Clinics · Medical centres</span><span class="pill live">Live demo</span></div>
+        <h3>NABD <small>Medical centre management</small></h3>
+        <p>Patient records, appointments, billing and daily clinic operations, from the reception desk to the finance office.</p>
+        <div class="foot"><span class="cprice">From <span class="amt" data-usd="USD 4,500" data-qar="QAR 16,500" data-aed="AED 16,500" data-sar="SAR 17,000" data-lkr="LKR 200,000">USD 4,500</span> setup <em>+ <span class="amt" data-usd="USD 250" data-qar="QAR 910" data-aed="AED 920" data-sar="SAR 940" data-lkr="LKR 9,500">USD 250</span>/month</em></span><span class="stack">Patients · Appointments · Billing</span><a class="demo" href="https://grj5t6th99-ai.github.io/nabd/">Open demo →</a></div>
+      </article>
+
+      <article class="card" id="smartware" data-cat="finance">
+        <div class="card-top"><span class="sector">Warehousing · Distribution</span><span class="pill live">Live demo</span></div>
+        <h3>SMARTWARE 360 <small>Warehouse control</small></h3>
+        <p>Receiving, issuing, stock counts, batch tracking and approvals, with a strict stock ledger behind every movement.</p>
+        <div class="foot"><span class="cprice">From <span class="amt" data-usd="USD 3,500" data-qar="QAR 12,500" data-aed="AED 13,000" data-sar="SAR 13,000" data-lkr="LKR 160,000">USD 3,500</span> setup <em>+ <span class="amt" data-usd="USD 200" data-qar="QAR 730" data-aed="AED 730" data-sar="SAR 750" data-lkr="LKR 7,500">USD 200</span>/month</em></span><span class="stack">Receiving · Counts · Batches</span><a class="demo" href="https://grj5t6th99-ai.github.io/smartware360/">Open demo →</a></div>
+      </article>
+
+      <article class="card" id="salon" data-cat="retail">
+        <div class="card-top"><span class="sector">Salons · Barbers</span><span class="pill live">Live demo</span></div>
+        <h3>Salon POS <small>Salon booking &amp; point of sale</small></h3>
+        <p>Bookings, the walk-in queue, checkout, memberships and per-barber reports in one simple screen for the front desk.</p>
+        <div class="foot"><span class="cprice">From <span class="amt" data-usd="USD 1,500" data-qar="QAR 5,450" data-aed="AED 5,500" data-sar="SAR 5,600" data-lkr="LKR 67,500">USD 1,500</span> setup <em>+ <span class="amt" data-usd="USD 90" data-qar="QAR 330" data-aed="AED 330" data-sar="SAR 340" data-lkr="LKR 3,500">USD 90</span>/month</em></span><span class="stack">Bookings · Queue · Memberships</span><a class="demo" href="https://grj5t6th99-ai.github.io/salon-pos/">Open demo →</a></div>
+      </article>
+
+      <article class="card" id="agency" data-cat="finance">
+        <div class="card-top"><span class="sector">Advertising · Print</span><span class="pill live">Live demo</span></div>
+        <h3>Agency <small>Advertising agency management</small></h3>
+        <p>Enquiries, quotations, job tracking, invoicing, stock and purchase orders for advertising and signage businesses.</p>
+        <div class="foot"><span class="cprice">From <span class="amt" data-usd="USD 2,500" data-qar="QAR 9,100" data-aed="AED 9,200" data-sar="SAR 9,400" data-lkr="LKR 110,000">USD 2,500</span> setup <em>+ <span class="amt" data-usd="USD 150" data-qar="QAR 550" data-aed="AED 550" data-sar="SAR 560" data-lkr="LKR 5,500">USD 150</span>/month</em></span><span class="stack">Quotes · Jobs · Invoicing</span><a class="demo" href="https://grj5t6th99-ai.github.io/agency-demo/">Open demo →</a></div>
+      </article>
+
+      <article class="card" id="restaurant" data-cat="retail">
+        <div class="card-top"><span class="sector">Restaurants · Catering</span><span class="pill live">Live demo</span></div>
+        <h3>Restaurant <small>Restaurant management</small></h3>
+        <p>Reservations, the table plan, orders and billing, menu costing and catering events, run from one system.</p>
+        <div class="foot"><span class="cprice">From <span class="amt" data-usd="USD 2,000" data-qar="QAR 7,300" data-aed="AED 7,350" data-sar="SAR 7,500" data-lkr="LKR 90,000">USD 2,000</span> setup <em>+ <span class="amt" data-usd="USD 120" data-qar="QAR 440" data-aed="AED 440" data-sar="SAR 450" data-lkr="LKR 4,500">USD 120</span>/month</em></span><span class="stack">Tables · Orders · Menu costing</span><a class="demo" href="https://grj5t6th99-ai.github.io/restaurant_management/">Open demo →</a></div>
+      </article>
+
+      <article class="card" id="markaba" data-cat="services">
+        <div class="card-top"><span class="sector">Car showrooms · Rentals</span><span class="pill live">Live demo</span></div>
+        <h3>MARKABA <small>Car showroom system</small></h3>
+        <p>Sales deals, the rental fleet, vehicle stock, workshop job cards and the full accounting back office.</p>
+        <div class="foot"><span class="cprice">From <span class="amt" data-usd="USD 5,000" data-qar="QAR 18,000" data-aed="AED 18,500" data-sar="SAR 19,000" data-lkr="LKR 225,000">USD 5,000</span> setup <em>+ <span class="amt" data-usd="USD 300" data-qar="QAR 1,100" data-aed="AED 1,100" data-sar="SAR 1,100" data-lkr="LKR 11,000">USD 300</span>/month</em></span><span class="stack">Sales · Rental · Workshop</span><a class="demo" href="https://grj5t6th99-ai.github.io/MARKABA/">Open demo →</a></div>
+      </article>
+
+      <article class="card" id="athar" data-cat="services">
+        <div class="card-top"><span class="sector">Real estate · Rentals</span><span class="pill live">Live demo</span></div>
+        <h3>ATHAR <small>Property &amp; real estate management</small></h3>
+        <p>Listings with a verified property record, the true monthly cost, rent passports, an AI deal room and move-out checks.</p>
+        <div class="foot"><span class="cprice">From <span class="amt" data-usd="USD 5,500" data-qar="QAR 20,000" data-aed="AED 20,000" data-sar="SAR 20,500" data-lkr="LKR 250,000">USD 5,500</span> setup <em>+ <span class="amt" data-usd="USD 300" data-qar="QAR 1,100" data-aed="AED 1,100" data-sar="SAR 1,100" data-lkr="LKR 11,000">USD 300</span>/month</em></span><span class="stack">Seeker · Owner · Agency · Admin</span><a class="demo" href="https://grj5t6th99-ai.github.io/athar-demo/">Open demo →</a></div>
+      </article>
+
+      <article class="card" id="narcafe" data-cat="retail">
+        <div class="card-top"><span class="sector">Cafés · Coffee shops</span><span class="pill live">Live demo</span></div>
+        <h3>NAR CAFÉ <small>Coffee shop website &amp; point of sale</small></h3>
+        <p>A café's own website with its story, menu, table requests and pickup orders, beside the counter register, kitchen screen, stock control and daily sales reports.</p>
+        <div class="foot"><span class="cprice">From <span class="amt" data-usd="USD 1,800" data-qar="QAR 6,550" data-aed="AED 6,600" data-sar="SAR 6,750" data-lkr="LKR 81,000">USD 1,800</span> setup <em>+ <span class="amt" data-usd="USD 100" data-qar="QAR 360" data-aed="AED 370" data-sar="SAR 380" data-lkr="LKR 4,000">USD 100</span>/month</em></span><span class="stack">Website · POS · Kitchen screen</span><a class="demo" href="https://grj5t6th99-ai.github.io/Nar-Cafe/">Open demo →</a></div>
+      </article>
+
+      <article class="card" id="caredesk" data-cat="services">
+        <div class="card-top"><span class="sector">Facilities · Maintenance</span><span class="pill live">Live demo</span></div>
+        <h3>CareDesk <small>Maintenance service app</small></h3>
+        <p>Clients report a fault with a photo or voice note, follow every step and approve the repair estimate. Each asset keeps a Care Passport of repairs and warranty.</p>
+        <div class="foot"><span class="cprice">From <span class="amt" data-usd="USD 3,000" data-qar="QAR 11,000" data-aed="AED 11,000" data-sar="SAR 11,000" data-lkr="LKR 135,000">USD 3,000</span> setup <em>+ <span class="amt" data-usd="USD 180" data-qar="QAR 660" data-aed="AED 660" data-sar="SAR 680" data-lkr="LKR 7,000">USD 180</span>/month</em></span><span class="stack">Client · Technician · Dispatch</span><a class="demo" href="https://grj5t6th99-ai.github.io/caredesk/">Open demo →</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="web" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">02 · Web design &amp; development</p>
+      <h2>Not only systems. Complete websites, designed and built end to end.</h2>
+      <p class="lede">From a single landing page to a full online store or customer portal: design, content layout, development, hosting and SEO, all handled by one person, in Arabic and English.</p>
+    </div>
+    <div class="webgrid">
+      <div class="webtile">
+        <span class="tag">Campaign & launch pages</span>
+        <h3>Landing page</h3>
+        <p>One focused page for a product, offer or event, with a lead form and WhatsApp button.</p>
+        <div class="wfoot"><span class="wprice">from <span class="amt" data-usd="USD 400" data-qar="QAR 1,450" data-aed="AED 1,450" data-sar="SAR 1,500" data-lkr="LKR 18,000">USD 400</span></span><span class="time">1 week</span></div>
+      </div>
+      <div class="webtile">
+        <span class="tag">Up to 6 pages</span>
+        <h3>Business website</h3>
+        <p>Arabic and English, mobile-first, fast, on your own domain, with Google Business profile set-up.</p>
+        <div class="wfoot"><span class="wprice">from <span class="amt" data-usd="USD 950" data-qar="QAR 3,450" data-aed="AED 3,500" data-sar="SAR 3,550" data-lkr="LKR 43,000">USD 950</span></span><span class="time">2 weeks</span></div>
+      </div>
+      <div class="webtile">
+        <span class="tag">10–20 pages + CMS</span>
+        <h3>Corporate website</h3>
+        <p>Services, projects, team, careers and news pages your staff can update themselves.</p>
+        <div class="wfoot"><span class="wprice">from <span class="amt" data-usd="USD 2,200" data-qar="QAR 8,000" data-aed="AED 8,100" data-sar="SAR 8,250" data-lkr="LKR 99,000">USD 2,200</span></span><span class="time">3–5 weeks</span></div>
+      </div>
+      <div class="webtile">
+        <span class="tag">Sell online</span>
+        <h3>E-commerce store</h3>
+        <p>Catalogue, cart, card payments and cash on delivery, order dashboard, stock and delivery zones.</p>
+        <div class="wfoot"><span class="wprice">from <span class="amt" data-usd="USD 2,500" data-qar="QAR 9,100" data-aed="AED 9,200" data-sar="SAR 9,400" data-lkr="LKR 110,000">USD 2,500</span></span><span class="time">3–4 weeks</span></div>
+      </div>
+      <div class="webtile">
+        <span class="tag">Bookings, members, dashboards</span>
+        <h3>Web portal or web app</h3>
+        <p>Customer portals, booking systems, quote calculators and dashboards built around your process.</p>
+        <div class="wfoot"><span class="wprice">from <span class="amt" data-usd="USD 4,000" data-qar="QAR 14,500" data-aed="AED 14,500" data-sar="SAR 15,000" data-lkr="LKR 180,000">USD 4,000</span></span><span class="time">4–8 weeks</span></div>
+      </div>
+      <div class="webtile">
+        <span class="tag">Existing websites</span>
+        <h3>Redesign & speed-up</h3>
+        <p>A modern redesign of your current site, faster loading, better Google ranking and mobile layout.</p>
+        <div class="wfoot"><span class="wprice">from <span class="amt" data-usd="USD 600" data-qar="QAR 2,200" data-aed="AED 2,200" data-sar="SAR 2,250" data-lkr="LKR 27,000">USD 600</span></span><span class="time">1–3 weeks</span></div>
+      </div>
+    </div>
+    <p class="terms">Every website includes mobile layout, basic SEO, an SSL certificate, a contact form and WhatsApp button. Hosting, backups and updates from <span class="amt" data-usd="USD 60" data-qar="QAR 220" data-aed="AED 220" data-sar="SAR 220" data-lkr="LKR 2,000">USD 60</span>/month.</p>
+  </div>
+</section>
+
+<section class="block" id="services" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">03 · Software packages</p>
+      <h2>Software packages, priced before work starts.</h2>
+      <p class="lede">Every quote is fixed per phase, so the price you approve is the price you pay. Prices are starting points; the exact figure depends on your scope.</p>
+    </div>
+
+    <div class="packages">
+      <div class="pkg">
+        <span class="tag">Start here</span>
+        <h3>7-day prototype</h3>
+        <div class="price mono"><span class="amt" data-usd="USD 700" data-lkr="LKR 50,000" data-qar="QAR 2,500" data-aed="AED 2,500" data-sar="SAR 2,600">USD 700</span><small>Credited in full if you go ahead</small></div>
+        <ul><li>A working, clickable version of your system</li><li>Built with your real screens and workflow</li><li>Show it to your team before committing</li></ul>
+        <div class="time">Delivery: 7 days</div>
+      </div>
+      <div class="pkg hl">
+        <span class="tag">Most popular</span>
+        <h3>Ready-made business system</h3>
+        <div class="price mono">from <span class="amt" data-usd="USD 1,500" data-qar="QAR 5,450" data-aed="AED 5,500" data-sar="SAR 5,600" data-lkr="LKR 67,500">USD 1,500</span><small>Setup, plus from <span class="amt" data-usd="USD 90" data-qar="QAR 330" data-aed="AED 330" data-sar="SAR 340" data-lkr="LKR 3,500">USD 90</span>/month. See each system above for its price.</small></div>
+        <ul><li>Any of the systems above: CRM, accounting, POS, clinic, salon and more</li><li>Your branding, your data imported</li><li>Staff training and private hosting</li></ul>
+        <div class="time">Go-live: 2–4 weeks</div>
+      </div>
+      <div class="pkg">
+        <span class="tag">Built for you</span>
+        <h3>Custom system / ERP</h3>
+        <div class="price mono">from <span class="amt" data-usd="USD 8,200" data-lkr="LKR 600,000" data-qar="QAR 30,000" data-aed="AED 30,000" data-sar="SAR 31,000">USD 8,200</span><small>Fixed price per phase</small></div>
+        <ul><li>Designed around your exact process</li><li>Delivered in phases with a demo every week</li><li>You own the source code</li></ul>
+        <div class="time">Typical: 2–4 months</div>
+      </div>
+      <div class="pkg">
+        <span class="tag">After launch</span>
+        <h3>Care plan</h3>
+        <div class="price mono">from <span class="amt" data-usd="USD 140" data-lkr="LKR 7,500" data-qar="QAR 500" data-aed="AED 500" data-sar="SAR 525">USD 140</span><small>Per month</small></div>
+        <ul><li>Hosting, daily backups, security updates</li><li>Bug fixes and small changes</li><li>Same-day response on WhatsApp</li></ul>
+        <div class="time">Monthly, cancel anytime</div>
+      </div>
+    </div>
+    <p class="terms">Payment terms: 40% to start, 40% at the approved demo, 20% at launch. Gulf clients pay by bank transfer in USD or local currency, Sri Lankan clients in rupees, and international clients in USD by bank transfer, Wise or Payoneer.</p>
+  </div>
+</section>
+
+<section class="block" id="clients" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">04 · Who I work with</p>
+      <h2>Based in the Gulf, open to clients everywhere.</h2>
+      <p class="lede">Most of my work is with businesses in the Middle East, and I take on projects in Sri Lanka and around the world. Meetings, demos and training run over video call wherever you are.</p>
+    </div>
+    <div class="markets">
+      <div class="market">
+        <span class="flag">Middle East · GCC</span>
+        <h3>Gulf businesses that need Arabic and English</h3>
+        <p>Systems built around how Gulf businesses work, with right-to-left Arabic as standard.</p>
+        <ul><li>Retail, restaurants, cafés and supermarkets</li><li>Gold and jewellery shops, salons, clinics</li><li>Trading, contracting and facilities companies</li><li>Insurance brokers, schools, car showrooms</li></ul>
+      </div>
+      <div class="market">
+        <span class="flag">Sri Lanka</span>
+        <h3>Sri Lankan businesses ready to go digital</h3>
+        <p>The same systems, priced for the Sri Lankan market, with English, Sinhala and Tamil on request.</p>
+        <ul><li>Shops, supermarkets and restaurants</li><li>Gold and jewellery shops</li><li>Private schools and tuition centres</li><li>Clinics, distributors and exporters</li></ul>
+      </div>
+      <div class="market">
+        <span class="flag">UK · Europe · Australia · Americas</span>
+        <h3>Small businesses, startups and agencies</h3>
+        <p>A senior developer and project manager on your project, at a fraction of local rates.</p>
+        <ul><li>CRMs, portals and internal tools</li><li>MVPs for startups</li><li>White-label development for agencies</li><li>Fixes and new features on existing systems</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="process" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">05 · How a project runs</p>
+      <h2>Managed like a project, not a favour.</h2>
+      <p class="lede">Ten years of running engineering and IT programmes means you always know what is done, what is next, and what it costs.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="k">Step 1 · Day 1</span><h3>15-minute call</h3><p>You explain how the business runs today and where time is lost. You get a written scope and fixed quote within two days.</p></div>
+      <div class="step"><span class="k">Step 2 · Week 1</span><h3>Working prototype</h3><p>You click through your own system with your own fields and sample data before the main build starts.</p></div>
+      <div class="step"><span class="k">Step 3 · Weeks 2+</span><h3>Build in phases</h3><p>Weekly demos, a shared progress tracker, and sign-off at the end of each phase. No surprises on the invoice.</p></div>
+      <div class="step"><span class="k">Step 4 · Launch</span><h3>Go live &amp; support</h3><p>Data import, staff training in Arabic or English, then hosting, backups and support on a monthly plan.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">06 · Why work with me</p>
+      <h2>One person who speaks both business and code.</h2>
+    </div>
+    <div class="why">
+      <div><h3>I understand the business side</h3><p>I have worked in insurance, oil and gas safety programmes, facilities management and IT. I ask about your workflow, approvals and reports before I talk about technology.</p></div>
+      <div><h3>Fast, because I build with AI</h3><p>Modern AI tools let me deliver in weeks what agencies quote in months, with tested code and proper documentation behind it.</p></div>
+      <div><h3>In your time zone, and accountable</h3><p>I work with businesses across the GCC during Gulf working hours, and with clients in Sri Lanka and abroad. You deal with the person building your system, and you keep the same contact after launch.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">07 · Questions</p>
+      <h2>Common questions</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Do I own the system and the data?</summary><p>Yes. Your data is always yours and can be exported at any time. On custom builds you also receive the full source code.</p></details>
+      <details><summary>Can it work in Arabic?</summary><p>Every system supports Arabic and English, including right-to-left layouts, printed invoices and receipts.</p></details>
+      <details><summary>Where is it hosted?</summary><p>On secure cloud hosting with daily backups, under your own domain. If you prefer, I can install it on your company's own server.</p></details>
+      <details><summary>What if I only need a small change to an existing system?</summary><p>Send me the details on WhatsApp or email. Small jobs are quoted at a fixed price before any work starts.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="block contact" id="contact">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow" style="color:inherit;opacity:.6">08 · Contact</p>
+      <h2 style="margin-top:14px">Book a free 15-minute demo.</h2>
+      <p class="lede">Tell me what your business does and what slows your team down. I will show you a system that fits, and give you a fixed quote.</p>
+      <p class="ar" lang="ar">احجز عرضاً مجانياً لمدة ١٥ دقيقة</p>
+    </div>
+    <div class="contact-list" id="contact-list">
+      <a href="https://www.linkedin.com/in/irshaad-foumie-981bab10a"><span><span class="lbl">LinkedIn</span><span class="val">linkedin.com/in/irshaad-foumie-981bab10a</span></span><span class="go">→</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap"><span>© 2026 Mohammed Irshaad Foumie</span><span>PMP® is a registered mark of the Project Management Institute, Inc.</span></div>
+</footer>
+
+<script>
+  // Add your details here. Leave a value empty ("") to hide that button.
+  const CONTACT = {
+    whatsapp: ["97430365523", "94761605523"],   // digits only, with country code
+    email: "irshfoumie@icloud.com"
+  };
+  (function () {
+    const list = document.getElementById("contact-list");
+    const add = (label, value, href) => {
+      const a = document.createElement("a");
+      a.href = href;
+      a.innerHTML = '<span><span class="lbl"></span><span class="val"></span></span><span class="go">→</span>';
+      a.querySelector(".lbl").textContent = label;
+      a.querySelector(".val").textContent = value;
+      list.insertBefore(a, list.firstChild);
+    };
+    if (CONTACT.email) add("Email", CONTACT.email, "mailto:" + CONTACT.email);
+    [].concat(CONTACT.whatsapp).filter(Boolean).reverse().forEach((n) => add("WhatsApp", "+" + n, "https://wa.me/" + n));
+
+    // Industry filter for the demo grid.
+    const fButtons = document.querySelectorAll(".filters button");
+    fButtons.forEach((b) => b.addEventListener("click", () => {
+      const f = b.dataset.f;
+      fButtons.forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+      document.querySelectorAll(".demos .card").forEach((c) => { c.hidden = !(f === "all" || c.dataset.cat === f); });
+    }));
+    // Currency selector: USD by default; local currency for visitors whose device is set to Qatar, UAE, Saudi or Sri Lanka time.
+    const sel = document.getElementById("currency");
+    const setCur = (cur) => {
+      document.querySelectorAll(".amt").forEach((el) => { el.textContent = el.dataset[cur]; });
+      sel.value = cur;
+      try { localStorage.setItem("cur", cur); } catch (e) {}
+    };
+    sel.addEventListener("change", () => setCur(sel.value));
+    try {
+      const saved = localStorage.getItem("cur");
+      const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      const byTz = { "Asia/Qatar": "qar", "Asia/Dubai": "aed", "Asia/Riyadh": "sar", "Asia/Colombo": "lkr" };
+      if (saved) setCur(saved); else if (byTz[tz]) setCur(byTz[tz]);
+    } catch (e) {}
+  })();
+</script>
+</body>
+</html>
